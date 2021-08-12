@@ -143,10 +143,23 @@ input {
     left: 25px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
     .logo {
         margin-bottom: 4rem;
     }
+
+    #mode {
+        position: absolute;
+        width: 52px;
+        height: 28px;
+        right: 10px;
+        top: 20px;
+        border: 2px solid;
+        border-radius: 20px;
+        background-color: white;
+    }
+
+
 }
     
 
