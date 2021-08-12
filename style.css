@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image:url(/bglight.jpg);
+    background-image:url(bglight.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
@@ -17,7 +17,7 @@ body {
 /* DARK MODE */
 
 body.night {
-    background-image: url(/bgdark.jpg);
+    background-image: url(bgdark.jpg);
 }
 
 
