@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+body {
+    background-image:url(/bglight.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    transition: 0.3s linear;
+}
+
+/* DARK MODE */
+
+body.night {
+    background-image: url(/bgdark.jpg);
+}
+
+
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 10px;
+}
+
+.logo{
+    font-weight: 900;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 26px;
+    margin-top: 70px;
+    margin-bottom: 8rem;
+    transition: 0.3s linear;
+}
+/* DARK MODE */
+
+.logo.darkmode {
+    color: white;
+}
+
+.new_task_text {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    border-bottom: 5px solid white;
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    outline: none;
+}
+
+::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+input {
+    color: white;
+}
+
+.task_type {
+    margin: 25px 0px 0px 0px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.uncompleted_task {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    margin: 7px 0;
+    font-weight: 600;
+}
+
+.uncompleted_task i {
+    float: right;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+
+.completed_task {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    margin: 7px 0;
+    font-weight: 600;
+    color: white;
+}
+
+.completed_task i {
+    float: right;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.fas.fa-trash:hover {
+    color: red;
+    transition: 0.2s;
+    transform: scale(130%);
+}
+
+.fas.fa-check:hover {
+    color: green;
+    transition: 0.2s;
+    transform: scale(130%);
+}
+
+/* DARK MODE */
+
+#mode {
+    position: absolute;
+    width: 52px;
+    height: 28px;
+    right: 30px;
+    top: 20px;
+    border: 2px solid;
+    border-radius: 20px;
+    background-color: white;
+}
+
+#mode::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    background-color: black;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#mode.active::before {
+    left: 25px;
+}
+
+@media (max-width: 700px) {
+    .logo {
+        margin-bottom: 4rem;
+    }
+}
+    
+
+
